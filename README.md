@@ -14,8 +14,6 @@ Before starting, ensure you have the following tools installed:
 - Python 3.8 or newer
 - pip (Python package manager)
 - virtualenv (recommended for creating an isolated environment)
-- PostgreSQL (if required by the project)
-
 ---
 
 ## Project Setup
@@ -55,6 +53,11 @@ Before starting, ensure you have the following tools installed:
 
    ```bash
    python manage.py runserver
+   
    The server will be available at: http://127.0.0.1:8000
+   
    the swager server will be available at: http://127.0.0.1:8000/api/schema/swagger-ui/
+   
+   from download the yaml file with documentation available at: http://127.0.0.1:8000/api/schema/
    ```
+   

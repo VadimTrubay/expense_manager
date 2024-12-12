@@ -2,8 +2,8 @@ from rest_framework import generics, status
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from django.db.models import Sum
-from .models import User, Expense
-from .serializers import UserSerializer, ExpenseSerializer
+from .models import Expense
+from .serializers import ExpenseSerializer
 from rest_framework.decorators import api_view
 
 
