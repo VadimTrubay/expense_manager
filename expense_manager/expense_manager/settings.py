@@ -24,6 +24,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'drf_spectacular',
     'rest_framework',
     'expenses',
 ]
@@ -97,5 +98,13 @@ REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.AllowAny',
     ],
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
     'DEFAULT_AUTHENTICATION_CLASSES': [],
+}
+
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'Expense Manager API',
+    'DESCRIPTION': 'API documentation for Expense Manager',
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,  # Prevent schema endpoint being included in the UI
 }

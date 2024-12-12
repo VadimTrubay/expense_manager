@@ -23,52 +23,38 @@ Before starting, ensure you have the following tools installed:
 1. **Clone the repository**
    Clone the repository to your local machine:
    ```bash
-   git clone <repository_url>
-   cd <repository_folder>
+   git clone https://github.com/VadimTrubay/expense_manager.git
+   cd expense_manager
    ```
-2. Create a virtual environment It's recommended to use a
-   virtual environment to isolate project dependencies:
-
-bash
-Copy code
-python -m venv venv
-Activate the virtual environment:
-
-On Windows:
+2. **Create a virtual environment It's recommended to use a
+   virtual environment to isolate project dependencies:**
 
    ```bash
-  venv\Scripts\activate
+   python -m venv venv
    ```
 
-Install dependencies Install the required packages:
+3. **Activate the virtual environment:**
 
-bash
-Copy code
-pip install -r requirements.txt
-Set up the database If your project uses a database, perform the following steps:
+   ```bash
+   venv\Scripts\activate
+   ```
 
-Create a PostgreSQL database (or another database, if specified in the project).
-Configure the database connection in settings.py:
-python
-Copy code
-DATABASES = {
-'default': {
-'ENGINE': 'django.db.backends.postgresql',
-'NAME': '<database_name>',
-'USER': '<username>',
-'PASSWORD': '<password>',
-'HOST': 'localhost',
-'PORT': '5432',
-}
-}
-Apply migrations After configuring the database, apply migrations:
+4. **Install dependencies Install the required packages:**
 
-bash
-Copy code
-python manage.py migrate
-Run the development server Start the local development server:
+   ```bash
+   pip install -r requirements.txt
+   ``` 
 
-bash
-Copy code
-python manage.py runserver
-The server will be available at: http://127.0.0.1:8000
+5. **Apply migrations After configuring the database, apply migrations:**
+
+   ```bash
+   python manage.py migrate
+   ```
+
+6. **Run the development server Start the local development server:**
+
+   ```bash
+   python manage.py runserver
+   The server will be available at: http://127.0.0.1:8000
+   the swager server will be available at: http://127.0.0.1:8000/api/schema/swagger-ui/
+   ```
